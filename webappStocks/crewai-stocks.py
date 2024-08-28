@@ -24,7 +24,7 @@ yahoo_finance_tool = Tool(
 )
 
 # IMPORTANDO OPENAI LLM - GPT
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 llm = ChatOpenAI(model='gpt-3.5-turbo')
 
 
